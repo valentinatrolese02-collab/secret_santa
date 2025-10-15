@@ -1,0 +1,64 @@
+/* Font impostato nel template via Google Fonts */
+
+body {
+    font-family: 'Mountains of Christmas', cursive;
+    background-color: #0b1e3d; /* blu notte */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    position: relative;
+    z-index: 1; /* sopra la neve */
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+header#header img {
+    border-radius: 10px;
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+section#main ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section#main ul li {
+    margin: 10px 0;
+}
+
+section#main ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+section#main ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffd700;
+}
+
+footer#footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Canvas neve sopra tutto */
+
+#snow {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
